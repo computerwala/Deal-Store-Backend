@@ -1,0 +1,5 @@
+package com.computerwala.db;
+
+public class CouponRepository {
+
+}

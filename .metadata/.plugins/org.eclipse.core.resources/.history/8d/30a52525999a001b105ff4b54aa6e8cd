@@ -1,0 +1,11 @@
+package com.computerwala;
+
+
+
+@SpringBootApplication
+public class CouponDealsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CouponDealsApplication.class, args);
+	}
+}
