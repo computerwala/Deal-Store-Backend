@@ -19,6 +19,16 @@ public class Deals {
 	
 	@Column(name = "price")
 	private String price;
+	
+	@Column(name = "status")
+	private Integer status;
+	
+	@Column(name = "discount")
+	private Integer discount;
+	
+	@Column(name = "category")
+	private String category;
+	
 
 	@Column(name = "picByte", length = 1000)
 	private byte[] picByte;
@@ -53,6 +63,33 @@ public class Deals {
 
 	public void setPrice(String price) {
 		this.price = price;
+	}
+
+	
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+
+	
+	
+	public Integer getDiscount() {
+		return discount;
+	}
+
+	public void setDiscount(Integer discount) {
+		this.discount = discount;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 
 	public byte[] getPicByte() {

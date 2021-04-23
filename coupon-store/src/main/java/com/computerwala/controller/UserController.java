@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.computerwala.db.UserRepository;
+import com.computerwala.model.Customer;
 import com.computerwala.model.User;
 
 
@@ -43,4 +44,9 @@ public class UserController {
 		return user;
 	}
 
+	@GetMapping(produces = "application/json")
+	@RequestMapping({ "/validateLogin" })
+	public Customer validateLogin() {
+		return new Customer("User successfully authenticated");
+	}
 }
